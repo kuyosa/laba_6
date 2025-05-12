@@ -20,8 +20,8 @@ route:
 receivers:
 - name: 'fastapi_telegram'
   telegram_configs:
-  - bot_token: 'token'
-    chat_id: 1
+  - bot_token: '8087085936:AAEiJ-GDBf3td2K6t6MHCH2qno4wWcDhdAc'
+    chat_id: 1082202680
     parse_mode: 'Markdown'
     message: |
       {{ if eq .CommonLabels.severity "critical" }}
@@ -39,8 +39,8 @@ receivers:
 
 - name: 'rabbitmq_telegram'
   telegram_configs:
-  - bot_token: 'token'
-    chat_id: 1
+  - bot_token: '8087085936:AAEiJ-GDBf3td2K6t6MHCH2qno4wWcDhdAc'
+    chat_id: 1082202680
     parse_mode: 'Markdown'
     message: |
       {{ if eq .CommonLabels.severity "critical" }}
